@@ -20,3 +20,12 @@ D:\Мои проекты\Камилла программирует\Komok_inc\Kom
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Komok_inc.csproj.CopyComplete
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Komok_inc.exe
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Komok_inc.pdb
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ClothesPages\clothesPageView.g.cs
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\startPage.g.cs
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ClothesPages\clothesPageView.baml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\startPage.baml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.dll
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.SqlServer.dll
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.xml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.SqlServer.xml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\ru\EntityFramework.resources.dll

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Komok_inc.Views.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace Komok_inc
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new startPage());
         }
     }
 }
