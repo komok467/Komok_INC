@@ -24,14 +24,22 @@
                     Margin="10">
             <Button x:Name="buttonClothesView"
                     Content="Посмотреть товар"
-                    Width="250"
+                    Width="350"
+                    Height="50"
+                    FontSize="24"
                     materialDesign:ButtonAssist.CornerRadius="15"
-                    Margin="5"
+                    Margin="10"
+                    Click="buttonClothesView_Click"
                     ToolTip="Перейти на страницу просмотра товара"/>
+
             <Button x:Name="buttonProiderView"
-                    Margin="5"
+                    Margin="10"
                     Content="Посмотреть поставщиков"
+                    Width="350"
+                    Height="50"
+                    FontSize="24"
                     materialDesign:ButtonAssist.CornerRadius="15"
+                    Click="buttonProiderView_Click"
                     ToolTip="Перейти на страницу поставщиков товара"/>
         </StackPanel>
     </Grid>

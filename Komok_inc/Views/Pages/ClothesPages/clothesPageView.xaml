@@ -5,10 +5,109 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Komok_inc.Views.Pages.ClothesPages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="clothesPageView">
+      d:DesignHeight="600" d:DesignWidth="1080"
+      Title="clothesPageView"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal"
+      TextOptions.TextRenderingMode="Auto"
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel VerticalAlignment="Center"
+                        Margin="5,17,5,13.6">
+                <TextBox x:Name="txtSearch"
+                         Width="350"
+                         HorizontalAlignment="Left"
+                         Margin="15"
+                         materialDesign:HintAssist.Hint="Поиск"
+                         TextChanged="txtSearch_TextChanged"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center">
+                <DatePicker x:Name="searchInDate"
+                            Width="250"
+                            materialDesign:HintAssist.Hint="Дата поступления"
+                            Style="{StaticResource MaterialDesignFloatingHintDatePicker}"/>
+                <Button x:Name="buttonSearch"
+                        Margin="15"
+                        Content="Применить"
+                        materialDesign:ButtonAssist.CornerRadius="15"
+                        Click="buttonSearch_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <DataGrid x:Name="clothesDataView" 
+                      AutoGenerateColumns="False"
+                      Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="0.5*"/>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
+                    <DataGridTextColumn Header="Размер" Binding="{Binding Size}" Width="*"/>
+                    <DataGridTextColumn Header="Состав" Binding="{Binding Structure}" Width="*"/>
+                    <DataGridTextColumn Header="Стиль" Binding="{Binding Style}" Width="*"/>
+                    <DataGridTextColumn Header="Страна" Binding="{Binding Country}" Width="*"/>
+                    <DataGridTextColumn Header="Бренд" Binding="{Binding Brend}" Width="*"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="*"/>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Date}" Width="*"/>
+                    <DataGridTextColumn Header="Категория" Binding="{Binding Category}" Width="*"/>
+                    <DataGridTextColumn Header="Пол" Binding="{Binding Gender}" Width="*"/>
+                    <DataGridTextColumn Header="Поставщик" Binding="{Binding ProviderTitle}" Width="*"/>
+
+                    <DataGridTemplateColumn Header="Вид" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Photo}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Button x:Name="buttonCreate" 
+                        Content="Создать"
+                        Margin="5"
+                        materialDesign:ButtonAssist.CornerRadius="15"
+                        Width="250"
+                        Click="buttonCreate_Click"/>
+
+                <Button x:Name="buttonEdit" 
+                        Content="Редактировать"
+                        Margin="5"
+                        materialDesign:ButtonAssist.CornerRadius="15"
+                        Width="250"
+                        Click="buttonEdit_Click"/>
+                
+                <Button x:Name="buttonRemove" 
+                        Content="Удалить"
+                        Margin="5"
+                        materialDesign:ButtonAssist.CornerRadius="15"
+                        Width="250"
+                        Click="buttonRemove_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

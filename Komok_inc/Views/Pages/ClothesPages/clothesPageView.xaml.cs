@@ -24,5 +24,30 @@ namespace Komok_inc.Views.Pages.ClothesPages
         {
             InitializeComponent();
         }
+        // Алгоритм для реализации нечеткого поиска
+        private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        // Алгоритм применения фильтра по Критериям:
+        private void buttonSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        // Переходим в страницу создания новой записи
+        private void buttonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new clothesCreatePage());
+        }
+        // Передаем выбранные данные в страницу редактирования для внесения изменений
+        private void buttonEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        // Удаления выбранной записи
+        private void buttonRemove_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

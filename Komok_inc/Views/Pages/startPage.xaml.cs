@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Komok_inc.Views.Pages.ClothesPages;
+using Komok_inc.Views.Pages.ProviderPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,16 @@ namespace Komok_inc.Views.Pages
         public startPage()
         {
             InitializeComponent();
+        }
+        // переход на страницу "Вид одежды"
+        private void buttonClothesView_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new clothesPageView());
+        }
+        // переход на страницу "Вид поставщиков"
+        private void buttonProiderView_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ProviderViewPage());
         }
     }
 }

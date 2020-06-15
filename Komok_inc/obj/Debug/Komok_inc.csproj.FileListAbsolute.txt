@@ -29,3 +29,7 @@ D:\Мои проекты\Камилла программирует\Komok_inc\Kom
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.xml
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\EntityFramework.SqlServer.xml
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\bin\Debug\ru\EntityFramework.resources.dll
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ProviderPages\ProviderViewPage.g.cs
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ProviderPages\ProviderViewPage.baml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ClothesPages\clothesCreatePage.g.cs
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ClothesPages\clothesCreatePage.baml
