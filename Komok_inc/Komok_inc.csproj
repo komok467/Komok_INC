@@ -76,7 +76,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\ClothesPages\clothesEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\ClothesPages\clothesPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ProviderPages\createProviderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ProviderPages\editProviderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,8 +119,17 @@
     <Compile Include="Views\Pages\ClothesPages\clothesCreatePage.xaml.cs">
       <DependentUpon>clothesCreatePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\ClothesPages\clothesEditPage.xaml.cs">
+      <DependentUpon>clothesEditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ClothesPages\clothesPageView.xaml.cs">
       <DependentUpon>clothesPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ProviderPages\createProviderPage.xaml.cs">
+      <DependentUpon>createProviderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ProviderPages\editProviderPage.xaml.cs">
+      <DependentUpon>editProviderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\ProviderPages\ProviderViewPage.xaml.cs">
       <DependentUpon>ProviderViewPage.xaml</DependentUpon>

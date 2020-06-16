@@ -20,16 +20,6 @@ namespace Komok_inc.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>()
-                .HasMany(e => e.ClothesData)
-                .WithRequired(e => e.Category1)
-                .HasForeignKey(e => e.Category);
-
-            modelBuilder.Entity<Gender>()
-                .HasMany(e => e.ClothesData)
-                .WithRequired(e => e.Gender1)
-                .HasForeignKey(e => e.Gender);
-
             modelBuilder.Entity<Provider>()
                 .Property(e => e.Email)
                 .IsUnicode(false);

@@ -9,18 +9,9 @@ namespace Komok_inc.Models
     [Table("Gender")]
     public partial class Gender
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Gender()
-        {
-            ClothesData = new HashSet<ClothesData>();
-        }
-
         [Key]
         [Column("Gender")]
         [StringLength(25)]
         public string Gender1 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ClothesData> ClothesData { get; set; }
     }
 }

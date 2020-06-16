@@ -47,11 +47,5 @@ namespace Komok_inc.Models
 
         [Required]
         public byte[] Photo { get; set; }
-
-        public virtual Category Category1 { get; set; }
-
-        public virtual Gender Gender1 { get; set; }
-
-        public virtual Provider Provider { get; set; }
     }
 }

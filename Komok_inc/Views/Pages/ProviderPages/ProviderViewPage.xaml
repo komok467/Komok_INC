@@ -4,11 +4,56 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Komok_inc.Views.Pages.ProviderPages"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProviderViewPage">
+      mc:Ignorable="d"  Loaded="Page_Loaded"
+      d:DesignHeight="600" d:DesignWidth="1080"
+      Title="ProviderViewPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal"
+      TextOptions.TextRenderingMode="Auto"
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}">
 
     <Grid>
-        
+        <DataGrid x:Name="dataProviderView"
+                  AutoGenerateColumns="False" 
+                  HorizontalAlignment="Left" Height="375" Margin="10,115,0,0" VerticalAlignment="Top" Width="1060">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding ID}" Width="0.4*"/>
+                <DataGridTextColumn Header="Наименовние" Binding="{Binding Title}" Width="*"/>
+                <DataGridTextColumn Header="Страна" Binding="{Binding Country}" Width="*"/>
+                <DataGridTextColumn Header="Город" Binding="{Binding City}" Width="*"/>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding Email}" Width="*"/>
+
+                <DataGridTemplateColumn Header="Логотип" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Logo}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="40,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345"
+                 materialDesign:HintAssist.Hint="Поиск"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextChanged="txtSearch_TextChanged"/>
+        <Button x:Name="buttonCreate"
+                materialDesign:ButtonAssist.CornerRadius="15"
+                Content="Создать" HorizontalAlignment="Left" Margin="145,525,0,0" 
+                VerticalAlignment="Top" Width="195" Height="35"
+                Click="buttonCreate_Click"/>
+        <Button x:Name="buttonEdit"
+            materialDesign:ButtonAssist.CornerRadius="15"
+            Content="Редактировать" HorizontalAlignment="Left" Margin="375,525,0,0" 
+            VerticalAlignment="Top" Width="195" Height="35"
+            Click="buttonEdit_Click"/>
+        <Button x:Name="buttonRemove"
+            materialDesign:ButtonAssist.CornerRadius="15"
+            Content="Удалить" HorizontalAlignment="Left" Margin="605,525,0,0" 
+            VerticalAlignment="Top" Width="195" Height="35"
+            Click="buttonRemove_Click"/>
+
     </Grid>
 </Page>

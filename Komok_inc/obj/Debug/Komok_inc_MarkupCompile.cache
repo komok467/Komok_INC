@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\App.xaml
-51114698036
+8506109070
 
-17-933133454
+20508978547
 20-733276436
-Views\Pages\ClothesPages\clothesCreatePage.xaml;Views\Pages\ClothesPages\clothesPageView.xaml;Views\Pages\ProviderPages\ProviderViewPage.xaml;Views\Pages\startPage.xaml;Views\Windows\MainWindow.xaml;
+Views\Pages\ClothesPages\clothesCreatePage.xaml;Views\Pages\ClothesPages\clothesEditPage.xaml;Views\Pages\ClothesPages\clothesPageView.xaml;Views\Pages\ProviderPages\createProviderPage.xaml;Views\Pages\ProviderPages\editProviderPage.xaml;Views\Pages\ProviderPages\ProviderViewPage.xaml;Views\Pages\startPage.xaml;Views\Windows\MainWindow.xaml;
 
 False
 

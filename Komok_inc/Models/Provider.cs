@@ -9,12 +9,6 @@ namespace Komok_inc.Models
     [Table("Provider")]
     public partial class Provider
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Provider()
-        {
-            ClothesData = new HashSet<ClothesData>();
-        }
-
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
@@ -33,8 +27,5 @@ namespace Komok_inc.Models
 
         [Required]
         public string Email { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ClothesData> ClothesData { get; set; }
     }
 }
