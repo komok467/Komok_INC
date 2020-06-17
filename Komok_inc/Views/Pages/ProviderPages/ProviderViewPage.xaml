@@ -54,6 +54,11 @@
             Content="Удалить" HorizontalAlignment="Left" Margin="605,525,0,0" 
             VerticalAlignment="Top" Width="195" Height="35"
             Click="buttonRemove_Click"/>
-
+        <Button x:Name="buttonExport"
+            materialDesign:ButtonAssist.CornerRadius="15"
+            Content="Выгрузить" HorizontalAlignment="Left" Margin="605,525,0,0" 
+            VerticalAlignment="Top" Width="195" Height="35"
+            Click="buttonExport_Click"/>
+        
     </Grid>
 </Page>

@@ -38,3 +38,4 @@ D:\Мои проекты\Камилла программирует\Komok_inc\Kom
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ProviderPages\createProviderPage.baml
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ProviderPages\editProviderPage.g.cs
 D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Views\Pages\ProviderPages\editProviderPage.baml
+D:\Мои проекты\Камилла программирует\Komok_inc\Komok_inc\obj\Debug\Komok_inc.csprojAssemblyReference.cache

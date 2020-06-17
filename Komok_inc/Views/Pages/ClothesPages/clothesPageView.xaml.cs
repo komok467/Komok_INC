@@ -1,5 +1,6 @@
 ﻿using Komok_inc.Context;
 using Komok_inc.Models;
+using Komok_inc.Moderator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -90,6 +91,19 @@ namespace Komok_inc.Views.Pages.ClothesPages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             clothesDataView.ItemsSource = XApp.db.ClothesData.ToList();
+        }
+        Export export = new Export();
+        // Экспортировать в TXT
+        private void buttonExport_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                export.ExportToTxt(clothesDataView);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

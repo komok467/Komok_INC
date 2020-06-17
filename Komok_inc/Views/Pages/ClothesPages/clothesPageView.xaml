@@ -52,6 +52,8 @@
                         Content="Применить"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Click="buttonSearch_Click"/>
+                <Button x:Name="buttonExport" Content="Выгрузить" Width="118" Height="34" materialDesign:ButtonAssist.CornerRadius="15"
+                        Click="buttonExport_Click"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1" Grid.ColumnSpan="2">

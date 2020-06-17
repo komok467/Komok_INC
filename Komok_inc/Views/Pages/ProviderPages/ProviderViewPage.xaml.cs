@@ -1,5 +1,6 @@
 ﻿using Komok_inc.Context;
 using Komok_inc.Models;
+using Komok_inc.Moderator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -77,6 +78,19 @@ namespace Komok_inc.Views.Pages.ProviderPages
         private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
             dataProviderView.ItemsSource = XApp.db.Provider.Where(item => item.Title.Contains(txtSearch.Text) || item.Country.Contains(txtSearch.Text) || item.City.Contains(txtSearch.Text) || item.Email.Contains(txtSearch.Text)).ToList();
+        }
+        Export export = new Export();
+        // Экспортировать в TXT
+        private void buttonExport_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                export.ExportToTxt(dataProviderView);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

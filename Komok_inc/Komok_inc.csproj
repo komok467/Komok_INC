@@ -115,6 +115,7 @@
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Provider.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
+    <Compile Include="Moderator\Export.cs" />
     <Compile Include="Moderator\loadDataInCombo.cs" />
     <Compile Include="Views\Pages\ClothesPages\clothesCreatePage.xaml.cs">
       <DependentUpon>clothesCreatePage.xaml</DependentUpon>
