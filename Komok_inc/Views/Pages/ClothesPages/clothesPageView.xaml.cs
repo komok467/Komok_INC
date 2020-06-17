@@ -105,5 +105,10 @@ namespace Komok_inc.Views.Pages.ClothesPages
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        // Назад к истокам
+        private void buttonBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

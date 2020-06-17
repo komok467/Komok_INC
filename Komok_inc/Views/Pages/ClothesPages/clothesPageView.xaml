@@ -65,7 +65,7 @@
                     <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
                     <DataGridTextColumn Header="Размер" Binding="{Binding Size}" Width="*"/>
                     <DataGridTextColumn Header="Состав" Binding="{Binding Structure}" Width="*"/>
-                    <DataGridTextColumn Header="Стиль" Binding="{Binding Style}" Width="*"/>
+                    <DataGridTextColumn Header="Сезон" Binding="{Binding Style}" Width="*"/>
                     <DataGridTextColumn Header="Страна" Binding="{Binding Country}" Width="*"/>
                     <DataGridTextColumn Header="Бренд" Binding="{Binding Brend}" Width="*"/>
                     <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="*"/>
@@ -89,6 +89,12 @@
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
+                <Button x:Name="buttonBack" 
+                        Content="Назад"
+                        Margin="5"
+                        materialDesign:ButtonAssist.CornerRadius="15"
+                        Width="250"
+                        Click="buttonBack_Click"/>
                 <Button x:Name="buttonCreate" 
                         Content="Создать"
                         Margin="5"

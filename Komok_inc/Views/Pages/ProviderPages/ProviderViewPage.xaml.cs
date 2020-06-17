@@ -92,5 +92,10 @@ namespace Komok_inc.Views.Pages.ProviderPages
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        // Назад
+        private void buttonBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

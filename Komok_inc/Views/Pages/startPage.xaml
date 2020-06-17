@@ -18,7 +18,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}">
 
 
-    <Grid>
+    <Grid Background="#FFC28EC2">
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Margin="10">
@@ -30,7 +30,7 @@
                     materialDesign:ButtonAssist.CornerRadius="15"
                     Margin="10"
                     Click="buttonClothesView_Click"
-                    ToolTip="Перейти на страницу просмотра товара"/>
+                    ToolTip="Перейти на страницу просмотра товара" Background="#FF9378C3"/>
 
             <Button x:Name="buttonProiderView"
                     Margin="10"
@@ -40,7 +40,7 @@
                     FontSize="24"
                     materialDesign:ButtonAssist.CornerRadius="15"
                     Click="buttonProiderView_Click"
-                    ToolTip="Перейти на страницу поставщиков товара"/>
+                    ToolTip="Перейти на страницу поставщиков товара" Background="#FF9D7DD6"/>
         </StackPanel>
     </Grid>
 </Page>

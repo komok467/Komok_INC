@@ -56,7 +56,7 @@
                 <ComboBox Width="400"
                           Margin="5"
                           x:Name="comboBoxStyle"
-                         materialDesign:HintAssist.Hint="Стиль"
+                         materialDesign:HintAssist.Hint="Сезон"
                          Style="{StaticResource MaterialDesignFloatingHintComboBox}">
                     <ComboBoxItem>Осень</ComboBoxItem>
                     <ComboBoxItem>Зима</ComboBoxItem>
@@ -111,8 +111,10 @@
                           materialDesign:HintAssist.Hint="Выберите поставщика"
                           Style="{StaticResource MaterialDesignFloatingHintComboBox}"
                           Margin="5">
-                    <ComboBoxItem>Хз</ComboBoxItem>
-                    <ComboBoxItem>Хайлайтер</ComboBoxItem>
+                    <ComboBoxItem>Аида, чисто из Турции (Юла)</ComboBoxItem>
+                    <ComboBoxItem>Зарема, Москва Сити</ComboBoxItem>
+                    <ComboBoxItem>Тетя Патимат</ComboBoxItem>
+                    <ComboBoxItem>Тетя Загидат</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
         </Grid>

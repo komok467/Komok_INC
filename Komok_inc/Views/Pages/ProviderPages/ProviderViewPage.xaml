@@ -39,26 +39,32 @@
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="40,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345"
                  materialDesign:HintAssist.Hint="Поиск"
                  Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextChanged="txtSearch_TextChanged"/>
+
         <Button x:Name="buttonCreate"
                 materialDesign:ButtonAssist.CornerRadius="15"
-                Content="Создать" HorizontalAlignment="Left" Margin="145,525,0,0" 
+                Content="Создать" HorizontalAlignment="Left" Margin="229,530,0,0" 
                 VerticalAlignment="Top" Width="195" Height="35"
                 Click="buttonCreate_Click"/>
         <Button x:Name="buttonEdit"
             materialDesign:ButtonAssist.CornerRadius="15"
-            Content="Редактировать" HorizontalAlignment="Left" Margin="375,525,0,0" 
+            Content="Редактировать" HorizontalAlignment="Left" Margin="444,530,0,0" 
             VerticalAlignment="Top" Width="195" Height="35"
             Click="buttonEdit_Click"/>
         <Button x:Name="buttonRemove"
             materialDesign:ButtonAssist.CornerRadius="15"
-            Content="Удалить" HorizontalAlignment="Left" Margin="605,525,0,0" 
+            Content="Удалить" HorizontalAlignment="Left" Margin="875,530,0,0" 
             VerticalAlignment="Top" Width="195" Height="35"
             Click="buttonRemove_Click"/>
         <Button x:Name="buttonExport"
             materialDesign:ButtonAssist.CornerRadius="15"
-            Content="Выгрузить" HorizontalAlignment="Left" Margin="605,525,0,0" 
+            Content="Выгрузить" HorizontalAlignment="Left" Margin="662,530,0,0" 
             VerticalAlignment="Top" Width="195" Height="35"
             Click="buttonExport_Click"/>
-        
+        <Button x:Name="buttonBack"
+            materialDesign:ButtonAssist.CornerRadius="15"
+            Content="Назад" HorizontalAlignment="Left" Margin="10,530,0,0" 
+            VerticalAlignment="Top" Width="195" Height="35"
+            Click="buttonBack_Click"/>
+
     </Grid>
 </Page>

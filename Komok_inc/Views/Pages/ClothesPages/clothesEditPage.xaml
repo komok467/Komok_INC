@@ -111,7 +111,10 @@
                           materialDesign:HintAssist.Hint="Выберите поставщика"
                           Style="{StaticResource MaterialDesignFloatingHintComboBox}"
                           Margin="5">
-                    <ComboBoxItem>Хз</ComboBoxItem>
+                    <ComboBoxItem>Аида, чисто из Турции (Юла)</ComboBoxItem>
+                    <ComboBoxItem>Зарема, Москва Сити</ComboBoxItem>
+                    <ComboBoxItem>Тетя Патимат</ComboBoxItem>
+                    <ComboBoxItem>Тетя Загидат</ComboBoxItem>
                     <ComboBoxItem>Хайлайтер</ComboBoxItem>
                 </ComboBox>
             </StackPanel>

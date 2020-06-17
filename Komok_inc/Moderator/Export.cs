@@ -13,6 +13,7 @@ namespace Komok_inc.Moderator
 {
     class Export
     {
+        // Экспорт данных в TXT 
         public void ExportToTxt(DataGrid dataGrid)
         {
             dataGrid.SelectAllCells();
